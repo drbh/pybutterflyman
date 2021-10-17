@@ -1,0 +1,9 @@
+/target
+Cargo.lock
+.env
+butterfly.net
+
+*.db
+*.py
+*.txt
+*.png

@@ -1,0 +1,18 @@
+[package]
+name = "pybutterflyman"
+version = "0.0.0"
+edition = "2018"
+
+[lib]
+name = "pybutterflyman"
+
+# "cdylib" is necessary to produce a shared library for Python to import from.
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.14.5"
+features = ["extension-module"]
+
+[dependencies]
+serde = { version = "1.0.126", features = ["derive"] }
+serde_json = "1.0.64"
